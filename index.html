@@ -1,74 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>   
-function validateUserInput() {
-    var userResponse = document.forms["myForm"]["userinput"].value;
-    if (x===null || x==="") {
-        alert("try again homie!");
-        return false;
-    }
-}
-function compareUserInput() {
-  var userResponse2 = document.forms["myForm"]["userinput"].value;
-  var userArr = userResponse2.split("");
-  var compare = 
-}
-function searchTerm() {
-    var user = document.getElementById("user").innerHTML;
-    var adjs = [messy, ugly, super, stupid]; 
-    //Randomize source: http://stackoverflow.com/questions/4550505/getting-random-value-from-an-array
-    var randA = adjs[Math.floor(Math.random() * adjs.length)];
-    var search = user.unshift(randA + " ");
-    }
-function buddahSays() {
-    var question = document.getElementById("question").innerHTML;
-   //Switch source: https://www.youtube.com/watch?v=Z6O_XdfCBEo 
-   switch (userSelction) {
-    case "what food does your heart desire?": 
-      document.write("enjoy your " + search + "mother");
-      break;
-    case "what is your favorite animal?":
-      document.write("You're a " + search + "______");
-      break;
-    case "feeling":
-      document.write("This is what " + search + "looks like");
-      break;
-    }
-}
-
-
-
-
-
- /**   
- //var user = [user input]; 
-  var question = [
-  {'what would you like to eat?': 'enjoy your' + search + },
-  {'second question: second answer' + }];
-
- //randomizes output
- var randQ = questions[Math.floor(Math.random() * question.length)];
-
- return ("enjoy your " + search + " motherfucker");
-
-
-};
-
-if user inputs an answer with unrecognized symbol, return "wat"?  <---------
-*/
-    </script>
-
   <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-  <h1 id = "question">
-      Hello World!
-    </h1>
-    
-    <h2 id = "user"> 
+  <title>Fat Buddha</title>
 
-    </h2>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="javascript.js"></script>
+
+</head>
+
+
+<body>
+<!-- Page heading "Fat Buddha" -->
+  <div class="page-header">
+    <h1>Fat Buddha <small>all your dreams are belong to us</small></h1>
+  </div>
+
+<!-- Drop down question menu -->
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      CHILD, CHOOSE YOUR QUESTION.
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What food does your heart desire?</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is your favorite animal?</a></li>
+    </ul>
+  </div>
+
+<!-- Buddha Image -->
+<img src="images/buddha.jpg" class="img-responsive" alt="Responsive image">
+
+<!-- User input form -->
+<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+answer here child: <input type="text" name="userinput">
+<input type="submit" value="Submit">
+
 </body>
 </html>
