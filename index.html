@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fat Buddha</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="javascript.js"></script>
+
+</head>
+
+
+<body>
+<!-- Page heading "Fat Buddha" -->
+  <div class="page-header">
+    <h1>Fat Buddha <small>all your dreams are belong to us</small></h1>
+  </div>
+
+<!-- Drop down question menu -->
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      CHILD, CHOOSE YOUR QUESTION.
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What food does your heart desire?</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is your favorite animal?</a></li>
+    </ul>
+  </div>
+
+<!-- Buddha Image -->
+<img src="images/buddha.jpg" class="img-responsive" alt="Responsive image">
+
+<!-- User input form -->
+<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+answer here child: <input type="text" name="userinput">
+<input type="submit" value="Submit">
+
+</body>
+</html>
