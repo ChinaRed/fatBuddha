@@ -6,9 +6,7 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="javascript.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -32,20 +30,31 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What food does your heart desire?</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is your favorite animal?</a></li>
+
         </ul>
       </div>
     </div>
   </div>
 
 &nbsp;
-  <!-- User input form -->
+  <!-- User input form, input goes to  -->
 <div class="container-fluid">
   <div class="col-md-8 col-md-offset-3">
     <form name = "myForm" action= "demo_form.asp" onsubmit="return validateUserInput" method="post">
-    answer here child: <input type="text" name="userinput" >
+    answer here child: <input type="text" name="yourresponse" >
+   
     <input type="Submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="col-md-8 col-md-offset-3">
+    <form id="user">
+    answer here my child: <input type="text" response="user"><input type="submit" value="Submit">
     </form>
   </div>
 </div>
@@ -58,6 +67,14 @@
     <img src="images/buddha.jpg" class="img-responsive" alt="Responsive image">
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
 
 
 </body>
